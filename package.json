@@ -1,0 +1,26 @@
+{
+  "name": "pizza-bot",
+  "version": "0.0.1",
+  "description": "Order 🍕 from Slack",
+  "main": "index.js",
+  "author":"techmsi",
+  "scripts": {
+    "prestart": "source .env",
+    "grok": "ngrok http 3000",
+    "start": "nodemon --ignore db/ index",
+    "test": "standard index.js plugins/*.js --fix"
+  },
+   "dependencies": {
+    "dominos": "^2.1.1",
+    "express": "^4.15.2",
+    "request": "^2.81.0",
+    "skellington": "^1.1.1",
+    "skellington-logger": "^1.1.0"
+  },
+  "devDependencies": {
+    "chalk": "^1.1.3",
+    "ngrok": "^2.2.7",
+    "nodemon": "^1.11.0",
+    "standard": "^9.0.1"
+  }
+}
